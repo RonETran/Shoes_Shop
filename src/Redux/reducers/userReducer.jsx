@@ -112,7 +112,6 @@ export const updateProfileActionApi = (values) => {
       const action = updateProfileAction(res.data.content);
       dispatch(action);
       alert(res.data?.content);
-      window.location.reload();
     }
     catch(err){
       alert(err.response.data.content);
